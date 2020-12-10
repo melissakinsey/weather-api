@@ -4,6 +4,25 @@ body {
   line-height: 1;
 }
 
+h1 {
+  color: #9b06f9;
+  font-size: 6rem;
+  font-family: "Faster One", cursive;
+  text-align: center;
+}
+
+/* h2 {
+  color: #9b06f9;
+  font-size: 2.5rem;
+  text-align: center;
+} */
+
+p {
+  margin: 6rem;
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
+
 .row.content {
   height: 1500px;
 }
@@ -23,26 +42,61 @@ body {
   font-size: 2.5rem;
   color: #02d215;
   width: 100%;
+  text-indent: 2rem;
+}
+
+#hot-tub {
+  background-color: #ffffff;
+  border-color: #01b7e5;
+  border-radius: 3rem;
+  margin: 2rem;
+  font-size: 2.5rem;
+  color: #01b7e5;
+  width: 100%;
+  text-indent: 2rem;
+}
+
+#kite {
+  background-color: #ffffff;
+  border-color: #fb043e;
+  border-radius: 3rem;
+  margin: 2rem;
+  font-size: 2.5rem;
+  color: #fb043e;
+  width: 100%;
+  text-indent: 2rem;
+}
+
+#sunglasses {
+  background-color: #ffffff;
+  border-color: #fcbe03;
+  border-radius: 3rem;
+  margin: 2rem;
+  font-size: 2.5rem;
+  color: #fcbe03;
+  width: 100%;
+  text-indent: 2rem;
 }
 
 .fa-hat-winter {
   color: #02d215;
 }
+
 .fa-hot-tub {
-  background-color: #01b7e5;
+  color: #01b7e5;
 }
 
 .fa-kite {
-  background-color: #fb043e;
+  color: #fb043e;
 }
 
 .fa-sunglasses {
-  background-color: #fcbe03;
+  color: #fcbe03;
 }
 
 footer {
-  background-color: #758ed4;
-  color: white;
+  background-color: #ffffff;
+  color: black;
   padding: 15px;
 }
 
