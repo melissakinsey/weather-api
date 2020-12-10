@@ -9,9 +9,35 @@ body {
 }
 
 .sidenav {
-  background-color: #89a7f8;
-  color: white;
+  /* background-color: #ffffff; */
+  font-family: "Open Sans", sans-serif;
+  /* color: white; */
   height: 100%;
+}
+
+#winter {
+  background-color: #ffffff;
+  border-color: #02d215;
+  border-radius: 3rem;
+  margin: 2rem;
+  font-size: 2.5rem;
+  color: #02d215;
+  width: 100%;
+}
+
+.fa-hat-winter {
+  color: #02d215;
+}
+.fa-hot-tub {
+  background-color: #01b7e5;
+}
+
+.fa-kite {
+  background-color: #fb043e;
+}
+
+.fa-sunglasses {
+  background-color: #fcbe03;
 }
 
 footer {
