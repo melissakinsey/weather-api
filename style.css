@@ -1,0 +1,31 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.row.content {
+  height: 1500px;
+}
+
+.sidenav {
+  background-color: #89a7f8;
+  color: white;
+  height: 100%;
+}
+
+footer {
+  background-color: #758ed4;
+  color: white;
+  padding: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
+  }
+  .row.content {
+    height: auto;
+  }
+}
