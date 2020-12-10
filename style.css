@@ -51,7 +51,7 @@ input {
   height: 100%;
 } */
 
-#winter {
+#temperature {
   background-color: #ffffff;
   border-color: #02d215;
   border-radius: 3rem;
@@ -59,7 +59,7 @@ input {
   font-size: 2.5rem;
   color: #02d215;
   width: 100%;
-  text-indent: 1rem;
+  text-indent: 2rem;
   margin-top: 27%;
 }
 
@@ -71,7 +71,7 @@ input {
   font-size: 2.5rem;
   color: #01b7e5;
   width: 100%;
-  text-indent: 1rem;
+  text-indent: 2rem;
 }
 
 #kite {
@@ -82,7 +82,7 @@ input {
   font-size: 2.5rem;
   color: #fb043e;
   width: 100%;
-  text-indent: 1rem;
+  text-indent: 2rem;
 }
 
 #sunglasses {
@@ -93,7 +93,7 @@ input {
   font-size: 2.5rem;
   color: #fcbe03;
   width: 100%;
-  text-indent: 1rem;
+  text-indent: 2rem;
 }
 
 #search {
@@ -126,7 +126,7 @@ button.btn.btn-outline {
   font-size: 2.5rem;
 }
 
-.fa-hat-winter {
+.fa-temperature-high {
   color: #02d215;
 }
 
