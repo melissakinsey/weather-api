@@ -1,14 +1,15 @@
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
-  line-height: 1;
+  /* line-height: 1; */
 }
 
 h1 {
   color: #9b06f9;
-  font-size: 6rem;
+  font-size: 7rem;
   font-family: "Faster One", cursive;
-  text-align: center;
+  box-align: center;
+  margin-top: 10%;
 }
 
 /* h2 {
@@ -18,9 +19,9 @@ h1 {
 } */
 
 p {
-  margin: 6rem;
-  font-size: 2.5rem;
-  line-height: 3rem;
+  font-size: 3rem;
+  line-height: 4rem;
+  box-align: right;
 }
 
 .row.content {
@@ -34,6 +35,22 @@ p {
   height: 100%;
 }
 
+input {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+}
+
+.no-outline:focus {
+  outline: none;
+}
+
+/* .form-control {
+  font-size: 2.5rem;
+  height: 100%;
+} */
+
 #winter {
   background-color: #ffffff;
   border-color: #02d215;
@@ -42,7 +59,8 @@ p {
   font-size: 2.5rem;
   color: #02d215;
   width: 100%;
-  text-indent: 2rem;
+  text-indent: 1rem;
+  margin-top: 27%;
 }
 
 #hot-tub {
@@ -53,7 +71,7 @@ p {
   font-size: 2.5rem;
   color: #01b7e5;
   width: 100%;
-  text-indent: 2rem;
+  text-indent: 1rem;
 }
 
 #kite {
@@ -64,7 +82,7 @@ p {
   font-size: 2.5rem;
   color: #fb043e;
   width: 100%;
-  text-indent: 2rem;
+  text-indent: 1rem;
 }
 
 #sunglasses {
@@ -75,7 +93,37 @@ p {
   font-size: 2.5rem;
   color: #fcbe03;
   width: 100%;
-  text-indent: 2rem;
+  text-indent: 1rem;
+}
+
+#search {
+  background-color: #ffffff;
+  border-color: #9b06f9;
+  border-radius: 3rem;
+  margin: 2rem;
+  color: #9b06f9;
+  padding: 2rem;
+  height: 100%;
+  font-size: 2rem;
+}
+
+button.btn.btn-outline {
+  border-radius: 3rem;
+  margin: 1.5px;
+  border-color: #ffffff;
+  padding: 2rem;
+  height: 100%;
+  font-size: 2.5rem;
+}
+
+.input-group {
+  border-radius: 3rem;
+  margin: 2rem;
+  border-color: #ffffff;
+  padding: 2rem;
+  height: 100%;
+  box-align: right;
+  font-size: 2.5rem;
 }
 
 .fa-hat-winter {
@@ -92,6 +140,10 @@ p {
 
 .fa-sunglasses {
   color: #fcbe03;
+}
+
+.fa-search {
+  color: #9b06f9;
 }
 
 footer {
