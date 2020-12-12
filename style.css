@@ -1,41 +1,29 @@
 body {
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  background-image: ("assets/clouds.jpg");
-  background-size: auto;
-
+  font-size: 12px;
+  /* image-rendering: auto;
+  background-size: auto; */
   /* line-height: 1; */
 }
 
 h1 {
-  color: #9b06f9;
-  font-size: 7rem;
+  color: #fa295a;
+  font-size: 5rem;
   font-family: "Faster One", cursive;
   box-align: center;
   margin-top: 10%;
 }
 
-/* h2 {
-  color: #9b06f9;
-  font-size: 2.5rem;
-  text-align: center;
-} */
-
 p {
-  font-size: 3rem;
-  line-height: 4rem;
-  box-align: right;
+  font-size: 2rem;
+  text-align: left;
+  /* line-height: 2.5rem; */
+  /* box-align: left; */
   margin-right: 8rem;
 }
 
-.row.content {
-  height: 1500px;
-}
-
 .sidenav {
-  /* background-color: #ffffff; */
   font-family: "Open Sans", sans-serif;
-  /* color: white; */
   height: 100%;
 }
 
@@ -50,19 +38,14 @@ input {
   outline: none;
 }
 
-/* .form-control {
-  font-size: 2.5rem;
-  height: 100%;
-} */
-
 #temperature {
   background-color: #ffffff;
   border-color: #02d215;
   border-radius: 3rem;
-  margin: 2rem;
-  font-size: 2.5rem;
+  margin: 1rem;
+  font-size: 2.25rem;
   color: #02d215;
-  width: 100%;
+  width: 90%;
   text-indent: 2rem;
   margin-top: 27%;
 }
@@ -71,10 +54,10 @@ input {
   background-color: #ffffff;
   border-color: #01b7e5;
   border-radius: 3rem;
-  margin: 2rem;
-  font-size: 2.5rem;
+  margin: 1rem;
+  font-size: 2.25rem;
   color: #01b7e5;
-  width: 100%;
+  width: 90%;
   text-indent: 2rem;
 }
 
@@ -82,10 +65,10 @@ input {
   background-color: #ffffff;
   border-color: #fb043e;
   border-radius: 3rem;
-  margin: 2rem;
-  font-size: 2.5rem;
+  margin: 1rem;
+  font-size: 2.25rem;
   color: #fb043e;
-  width: 100%;
+  width: 90%;
   text-indent: 2rem;
 }
 
@@ -93,23 +76,22 @@ input {
   background-color: #ffffff;
   border-color: #f8ba01;
   border-radius: 3rem;
-  margin: 2rem;
-  font-size: 2.5rem;
+  margin: 1rem;
+  font-size: 2.25rem;
   color: #f8ba01;
-  width: 100%;
+  width: 90%;
   text-indent: 2rem;
 }
 
 #search {
   background-color: #ffffff;
-  border-color: #9b06f9;
+  border-color: #fa295a;
   border-radius: 3rem;
-  margin: 2rem;
-  color: #9b06f9;
+  margin: 1rem;
+  color: #fa295a;
   padding: 2rem;
-  height: 100%;
-  font-size: 2.5rem;
-  justify-content: right;
+  height: 90%;
+  font-size: 3rem;
 }
 
 button.btn.btn-outline {
@@ -118,16 +100,6 @@ button.btn.btn-outline {
   border-color: #ffffff;
   padding: 2rem;
   height: 100%;
-  font-size: 2.5rem;
-}
-
-.input-group {
-  border-radius: 3rem;
-  margin: 2rem;
-  border-color: #ffffff;
-  padding: 2rem;
-  height: 100%;
-  justify-items: right;
   font-size: 2.5rem;
 }
 
@@ -148,15 +120,29 @@ button.btn.btn-outline {
 }
 
 .fa-search {
-  color: #9b06f9;
+  color: #fa295a;
 }
 
 footer {
   background-color: #ffffff;
   color: black;
-  padding: 15px;
 }
 
+#beach {
+  width: 50%;
+  /* margin-block-start: "text-align: right"; */
+  float: right;
+  padding-bottom: 20%;
+  padding-top: 10%;
+}
+
+#container-fluid {
+  text-align: center;
+  background: url("/assets/gradient.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 70%;
+}
 @media screen and (max-width: 767px) {
   .sidenav {
     height: auto;
