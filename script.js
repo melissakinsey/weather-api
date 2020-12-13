@@ -1,6 +1,5 @@
 $(document).ready(function () {
   
-//     const input = document.querySelector('input');
 const log = document.getElementById('values');
 
 input.addEventListener('input', updateValue);
@@ -9,10 +8,7 @@ function updateValue(e) {
   log.textContent = e.target.value;
 }
 
-    // let e = 
-    let queryURL = "https://api.openweathermap.org/data/2.5/forecast?q={city name},{state code},{country code}&appid="9c31a3b4618fe0ad90a6912f6418fb0c"
-    
-}
+let queryURL = "https://api.openweathermap.org/data/2.5/forecast?q={city name},{state code},{country code}&appid=9c31a3b4618fe0ad90a6912f6418fb0c"
 
         var city = $(this).attr("data-name");
         var queryURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&apikey=9c31a3b4618fe0ad90a6912f6418fb0c";

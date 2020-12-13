@@ -19,13 +19,43 @@ h2 {
   color: #fa295a;
 }
 
+h3 {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+}
+
 p {
   font-size: 2rem;
   text-align: left;
+  color: white;
   /* line-height: 2.5rem; */
   /* box-align: left; */
   margin-right: 8rem;
 }
+
+div .card {
+  background-color: #01b7e5;
+}
+
+/* #card-1 {
+  background-color: #d20241;
+}
+
+#card-2 {
+  background-color: #01b7e5;
+}
+
+#card-3 {
+  background-color: #02d215;
+}
+
+#card-4 {
+  background-color: #02d215;
+}
+
+#card-5 {
+  background-color: #02d215;
+} */
 
 ul {
   margin: 25px;
