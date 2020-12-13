@@ -35,6 +35,7 @@ p {
 
 div .card {
   background-color: #01b7e5;
+  border-radius: 20px;
 }
 
 /* #card-1 {
