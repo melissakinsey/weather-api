@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--BEGIN HEAD-->
 <head>
   <title>Weather Dashboard</title>
   <link rel="stylesheet" href="stye.css">
@@ -13,223 +14,86 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Faster+One&display=swap" rel="stylesheet">
 </head>
+<!--BEGIN BODY-->
 <body>
-   <div class="container-fluid" id="container-fluid" img src="assets/gradient.jpg">
-    <div class="row content">
-      <div class="col-sm-3 sidenav">   
-        <ul class="nav nav-pills nav-stacked">
-          <button type="button" class="btn btn-outline" id="temperature">Temperature<i class="far fa-temperature-high"></i></button>            
-          <button type="button" class="btn btn-outline" id="hot-tub">Humidity<i class="far fa-hot-tub"></i></button>          
-          <button type="button" class="btn btn-outline" id="kite"></i>Windspeed<i class="far fa-kite"></i></button>       
-          <button type="button" class="btn btn-outline" id="sunglasses">UV Index<i class="fal fa-sunglasses"></i></button>  
-        </ul>        
-      </div>
-      <div class="col-sm-1"></div>
-      <div class="col-sm-8">
-        <!-- <hr> -->
-        <h1>Weather Dashboard</h1>
-        <form>
-          <button type="button" class="btn btn-outline" id="values"><input placeholder="Search for your city" name="name"/><i class="fas fa-search-location"></i></button>
-          
-          <br><br>
-        </form> 
-        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> -->
-        <span class="float-right"><img src = "assets/beach.png" id="beach"></span>  
-      </div>       
-      
-  
-    <div>
-      <!-- .column {
-      float: left;
-      width: 20%;
-      padding: 0 10px;
-    }
-    
-    .row {margin: 0 -5px;}
-    
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-
-    @media screen and (max-width: 600px) {
-      .column {
-        width: 60%;
-        display: block;
-        margin-bottom: 20px;
-      }
-    }
-    
-    .card {
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-      padding: 10px;
-      margin-left: 10px;
-      text-align: center;
-      background-color: #f1f1f1;
-    }
-
-    p {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding: 2em;
-} -->
-
-    </style>
-    </head>
-    <body>
-    
-    <h2>Five-Day Forecast</h2>
-    <br><br>
-    
-    <div class="row">
-      <div class="column">
-        <div class="card">
-          <h3>Day 1</h3>
-          <p>Some text</p>
-          <p>Some text</p>
+  <div class="tempF">
+    <div class="container-fluid" id="container-fluid" img src="assets/gradient.jpg">
+      <div class="row content">
+        <!--Begin Side Nav-->
+        <div class="col-sm-3 sidenav">   
+          <ul class="nav nav-pills nav-stacked">
+            <div class="temp"><button type="button" class="btn btn-outline" id="temperature">Temperature<i class="far fa-temperature-high"></i></button></div>            
+            <div class="humidity"><button type="button" class="btn btn-outline" id="hot-tub">Humidity<i class="far fa-hot-tub"></i></button></div>        
+            <div class="wind"><button type="button" class="btn btn-outline" id="kite">Windspeed<i class="far fa-kite"></i></button></div>       
+            <button type="button" class="btn btn-outline" id="sunglasses">UV Index<i class="fal fa-sunglasses"></i></button>  
+          </ul>        
         </div>
-      </div>
-    
-      <div class="column">
-        <div class="card" id="card-2">
-          <h3>Day 2</h3>
-          <p>Some text</p>
-          <p>Some text</p>
-        </div>
-      </div>
-      
-      <div class="column">
-        <div class="card" id="card-3">
-          <h3>Day 3</h3>
-          <p>Some text</p>
-          <p>Some text</p>
-        </div>
-      </div>
-      
-      <div class="column">
-        <div class="card" id="card-4">
-          <h3>Day 4</h3>
-          <p>Some text</p>
-          <p>Some text</p>
-        </div>
-      </div>
-
-        <div class="column">
-          <div class="card" id="card-5">
-            <h3>Day 5</h3>
-            <p>Some text</p>
-            <p>Some text</p>
-          </div>
-      </div>
-    </div>
-    
-    </div>
-    <img src="assets/ocean-2.png">  
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-      
-      body {
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      
-      .column {
-        float: left;
-        width: 20%;
-        padding: 0 10px;
-      }
-      
-      .row {margin: 0 -5px;}
-      
-      .row:after {
-        content: "";
-        display: table;
-        clear: both;
-      }
-
-      @media screen and (max-width: 600px) {
-        .column {
-          width: 60%;
-          display: block;
-          margin-bottom: 20px;
-        }
-      }
-      
-      .card {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        padding: 10px;
-        margin-left: 10px;
-        text-align: center;
-        background-color: #f1f1f1;
-      }
-
-      p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding: 2em;
-}
-
-      /* </style>
-      </head>
-      <body>
-      
-      <h2>Five-Day Forecast</h2>
-      
-      <div class="row">
-        <div class="column">
-          <div class="card">
-            <h3>Day 1</h3>
-            <p>Some text</p>
-            <p>Some text</p>
-          </div>
-        </div>
-      
-        <div class="column">
-          <div class="card">
-            <h3>Day 2</h3>
-            <p>Some text</p>
-            <p>Some text</p>
-          </div>
-        </div>
+        <!--Begin Dashboard-->
+        <div class="col-sm-1"></div>
+        <div class="col-sm-8">
+          <h1>Weather Dashboard</h1>
+            <div class="city">          
+              <input id="cityInput" placeholder="Search for your city"/>
+              <button type="button" class="btn btn-outline" id="values">
+                <i class="fas fa-search-location"></i>
+              </button>
+            </div>
+            <br><br>
+          <span class="float-right"><img src = "assets/beach.png" id="beach"></span>  
+        </div>       
+        <div>
+        </head>
+        <!--Begin Cards-->
+        <h2>Five-Day Forecast</h2>
+        <br><br>
         
-        <div class="column">
-          <div class="card">
-            <h3>Day 3</h3>
-            <p>Some text</p>
-            <p>Some text</p>
-          </div>
-        </div>
-        
-        <div class="column">
-          <div class="card">
-            <h3>Day 4</h3>
-            <p>Some text</p>
-            <p>Some text</p>
-          </div>
-        </div>
-
+        <div class="row">
           <div class="column">
             <div class="card">
+              <h3>Day 1</h3>
+              <p>Some text</p>
+              <p>Some text</p>
+            </div>
+          </div>
+          
+          <div class="column">
+            <div class="card" id="card-2">
+              <h3>Day 2</h3>
+              <p>Some text</p>
+              <p>Some text</p>
+            </div>
+          </div>
+          
+          <div class="column">
+            <div class="card" id="card-3">
+              <h3>Day 3</h3>
+              <p>Some text</p>
+              <p>Some text</p>
+            </div>
+          </div>
+          
+          <div class="column">
+            <div class="card" id="card-4">
+              <h3>Day 4</h3>
+              <p>Some text</p>
+              <p>Some text</p>
+            </div>
+          </div>
+          
+          <div class="column">
+            <div class="card" id="card-5">
               <h3>Day 5</h3>
               <p>Some text</p>
               <p>Some text</p>
             </div>
+          </div>
         </div>
       </div>
-      
-       */
+      <img src="assets/ocean-2.png">  
+    </div>
   </body>
-     
-   
-   <script src="script.js"></script>
+  <script src="script.js"></script>
+  <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/luxon@1.25.0/build/global/luxon.min.js"></script>
   <script src= "http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js" ></script>
   </html
