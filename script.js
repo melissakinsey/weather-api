@@ -18,8 +18,8 @@ $(document).ready(function () {
       console.log(queryURL);
 
       console.log(response);
-
-      $(".city").html("<h1>" + response.name + " Weather Details</h1>");
+      $(city).text("Weather Details: " + response.description);
+      // $(".city").html("<h1>" + response.name + "Weather Details</h1>");
       $(".wind").text("Wind Speed: " + response.wind.speed);
       $(".humidity").text("Humidity: " + response.main.humidity);
 

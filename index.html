@@ -16,8 +16,8 @@
 </head>
 <!--BEGIN BODY-->
 <body>
-  <div class="tempF">
-    <div class="container-fluid" id="container-fluid" img src="assets/gradient.jpg">
+  <div class="container-fluid" id="container-fluid" img src="assets/gradient.jpg">
+    <div class="tempF">
       <div class="row content">
         <!--Begin Side Nav-->
         <div class="col-sm-3 sidenav">   
@@ -25,25 +25,25 @@
             <div class="temp"><button type="button" class="btn btn-outline" id="temperature">Temperature<i class="far fa-temperature-high"></i></button></div>            
             <div class="humidity"><button type="button" class="btn btn-outline" id="hot-tub">Humidity<i class="far fa-hot-tub"></i></button></div>        
             <div class="wind"><button type="button" class="btn btn-outline" id="kite">Windspeed<i class="far fa-kite"></i></button></div>       
-            <button type="button" class="btn btn-outline" id="sunglasses">UV Index<i class="fal fa-sunglasses"></i></button>  
-          </ul>        
-        </div>
+            <div class="uv-index"></div><button type="button" class="btn btn-outline" id="sunglasses">UV Index<i class="fal fa-sunglasses"></i></button></div>
+          </ul>
+                
         <!--Begin Dashboard-->
         <div class="col-sm-1"></div>
         <div class="col-sm-8">
           <h1>Weather Dashboard</h1>
             <div class="city">          
-              <input id="cityInput" placeholder="Search for your city"/>
+              
               <button type="button" class="btn btn-outline" id="values">
-                <i class="fas fa-search-location"></i>
+                <input id="cityInput" placeholder="Search for your city"/><i class="fas fa-search-location"></i>
               </button>
             </div>
             <br><br>
           <span class="float-right"><img src = "assets/beach.png" id="beach"></span>  
-        </div>       
-        <div>
-        </head>
-        <!--Begin Cards-->
+        </div>  
+      </div>   
+       <!--Begin Cards-->
+      <div>
         <h2>Five-Day Forecast</h2>
         <br><br>
         
@@ -91,6 +91,7 @@
       </div>
       <img src="assets/ocean-2.png">  
     </div>
+  </div>
   </body>
   <script src="script.js"></script>
   <script src="script.js"></script>
