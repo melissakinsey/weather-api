@@ -1,7 +1,4 @@
 $(document).ready(function () {
-  // {/* <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  // <script type="text/javascript"> */}
-
   $("#values").click(function () {
     var APIKey = "addc5f504176245d7ca85381d3c3c7bf";
     var city = $("#cityInput").val();
@@ -9,28 +6,60 @@ $(document).ready(function () {
     var queryURL =
       "https://api.openweathermap.org/data/2.5/forecast?q=" +
       city +
+      "&units=imperial" +
       "&appid=" +
       APIKey;
     $.ajax({
       url: queryURL,
       method: "GET",
-    }).then(function (response) {
+    }).then(function (list) {
       console.log(queryURL);
 
-      console.log(response);
-      $(city).text("Weather Details: " + response.description);
-      // $(".city").html("<h1>" + response.name + "Weather Details</h1>");
-      $(".wind").text("Wind Speed: " + response.wind.speed);
-      $(".humidity").text("Humidity: " + response.main.humidity);
-
-      var tempF = (response.main.temp - 273.15) * 1.8 + 32;
-
-      $(".temp").text("Temperature (K) " + response.main.temp);
-      $(".tempF").text("Temperature (F) " + tempF.toFixed(2));
-
-      console.log("Wind Speed: " + response.wind.speed);
-      console.log("Humidity: " + response.main.humidity);
-      console.log("Temperature (F): " + tempF);
-    });
-  });
-});
+      console.log(list);
+      $(".city").html("<h2><b>" + list.city.name + " Weather Details</b></h2>");
+      
+      function uvIndex (lat, lon) {
+        let queryURL =
+          "https://api.openweathermap.org/data/2.5/uvi?lat=" +
+          lat +
+          "&lon=" +
+          lon +
+          "&appid=" +
+          APIKey;
+        
+//       //   $("#values").click(function () {
+//       //     var APIKey = "addc5f504176245d7ca85381d3c3c7bf";
+//       //     var cityName = $("#cityInput").val();
+//       //     console.log(cityName);
+//       //     var queryURL =
+//       //       "https://api.openweathermap.org/data/2.5/forecast/daily?q=" +
+//       //       cityName +
+//       //       "&cnt=5" +
+//       //       "&appid=" +
+//       //       APIKey;
+//       //
+//       //     $.ajax({
+//       //       url: queryURL,
+//       //       method: "GET",
+//       //     }).then(function (list) {
+//       //       console.log(queryURL);
+//       //
+//       //       console.log(list);
+//       //       $(".city").html("<h2><b>" + list.city.name + " Weather Details</b></h2>");
+// 
+//       // console.log(list);
+//       // var Windspeed = response.list.wind.speed;
+//       // // const theWind = ".wind";
+//       // $(".wind").html("<p>Windspeed: " + Windspeed + "</p>");
+//       //
+//       //       console.log();
+//       //       $(".humidity").text("Humidity: " + list.main.humidity);
+//       //
+//       //       console.log(list);
+//       //       $(".tempF").text("Temperature (F) " + list.main.temperature);
+// 
+//       // console.log("Humidity: " + response.list.main.humidity);
+//       // console.log("Temperature (F): " + tempF);
+//     });
+//   });
+// });
