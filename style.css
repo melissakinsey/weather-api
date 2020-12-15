@@ -200,12 +200,15 @@ button.btn.btn-outline {
 }
 
 p {
-  display: block;
+  font-size: 1.35rem;
+  display: inline-block;
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-  padding: 2em;
+  padding: 0.5em;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 @media screen and (max-width: 600px) {
