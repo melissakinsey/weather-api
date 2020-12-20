@@ -33,14 +33,14 @@
           <div class="windspeed"><button type="button" class="btn btn-outline" 
             id="kite">Windspeed<i class="far fa-kite"></i></button></div>    
             
-          <!--UV Index Button-->
-          <div class="uv-index"></div><button type="button" class="btn btn-outline" id="sunglasses">UV Index<i class="fal fa-sunglasses"></i></button></div>
+            <!--UV Index Button-->
+            <div class="uv-index"></div><button type="button" class="btn btn-outline" id="sunglasses">UV Index<i class="fal fa-sunglasses"></i></button></div>
           </ul>
           
           <!--Begin Dashboard-->
           <div class="col-sm-9">
             <h1>Weather Dashboard</h1>
-            <div class="city">          
+            <div id="results">          
               
               <button type="button" class="btn btn-outline" id="values">
                 <input id="cityInput" placeholder="Search for your city"/><i class="fas fa-search-location"></i>
@@ -58,7 +58,7 @@
           <div class="row">
             <div class="column">
               <div class="card">
-                <h3><b>Day 1</b></h3>
+                <h3><b>Day <span class="day"> 1</span></b></h3>
                 <b><p class="description" id="description-day-1"></p></b>
                 <div><p><b>Temp (°F): </b></p><p id="temp-day-1"></p></div>
                 <div><p><b>Humidity: </b></p><p id="humidity-day-1"></p></div>
@@ -68,7 +68,7 @@
             
             <div class="column">
               <div class="card">
-                <h3><b>Day 2</b></h3>
+                <h3><b>Day <span class="day"> 2</span></b></h3>
                 <b><p class="description" id="description-day-2"></p></b>
                 <div><p><b>Temp (°F): </b></p><p id="temp-day-2"></p></div>
                 <div><p><b>Humidity: </b></p><p id="humidity-day-2"></p></div>
@@ -78,8 +78,8 @@
             
             <div class="column">
               <div class="card">
-                <h3><b>Day 3</b></h3>
-              <b><p class="description" id="description-day-3"></p></b>
+                <h3><b>Day <span class="day"> 3</span></b></h3>
+                <b><p class="description" id="description-day-3"></p></b>
                 <div><p><b>Temp (°F): </b></p><p id="temp-day-3"></p></div>
                 <div><p><b>Humidity: </b></p><p id="humidity-day-3"></p></div>
                 <div><p><b>Windspeed: </b></p><p id="windspeed-day-3"></p></div>
@@ -88,8 +88,8 @@
             
             <div class="column">
               <div class="card">
-                <h3><b>Day 4</b></h3>
-              <b><p class="description" id="description-day-4"></p></b>
+                <h3><b>Day <span class="day"> 4</span></b></h3>
+                <b><p class="description" id="description-day-4"></p></b>
                 <div><p><b>Temp (°F): </b></p><p id="temp-day-4"></p></div>
                 <div><p><b>Humidity: </b></p><p id="humidity-day-4"></p></div>
                 <div><p><b>Windspeed: </b></p><p id="windspeed-day-4"></p></div>
@@ -98,7 +98,7 @@
             
             <div class="column">
               <div class="card">
-                <h3><b>Day 5</b></h3>
+                <h3><b>Day <span class="day"> 5</span></b></h3>
                 <b><p class="description" id="description-day-5"></p></b>
                 <div><p><b>Temp (°F): </b></p><p id="temp-day-5"></p></div>
                 <div><p><b>Humidity: </b></p><p id="humidity-day-5"></p></div>

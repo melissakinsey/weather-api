@@ -7,35 +7,33 @@ input {
 
 p {
   text-transform: capitalize;
-  font-size: 1.5rem;
-  text-align: center;
+  font-size: 2rem;
   color: #01b7e5;
-  margin-left: 2rem;
   display: inline-block;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-  padding: 0.25em;
-  overflow: hidden;
-  white-space: nowrap;
+  padding: 0.35em;
 }
 
 h1 {
   font-family: "Faster One", cursive;
-  font-size: 5rem;
+  font-size: 7rem;
   color: #fa295a;
   box-align: center;
   margin-top: 10%;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 4rem;
   font-family: "Open Sans", sans-serif;
   color: #013b86;
 }
 
 h3 {
-  font-family: "Faster One", cursive;
-  font-size: 2.35rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 3.5rem;
   color: #013b86;
 }
 
@@ -53,12 +51,17 @@ div .card {
 }
 
 button.btn.btn-outline {
-  border-radius: 3rem;
-  margin-left: 1rem;
+  border-radius: 4rem;
   border-color: #ffffff;
   padding: 2rem;
   height: 100%;
-  font-size: 2.5rem;
+  font-size: 3rem;
+}
+
+span.day {
+  font-family: "Faster One", cursive;
+  font-size: 4rem;
+  color: #013b86;
 }
 
 .column {
@@ -71,7 +74,9 @@ button.btn.btn-outline {
 }
 
 .nav-stacked {
-  padding-left: 30px;
+  padding-left: 30%;
+  padding-top: 35%;
+  padding-bottom: 0%;
 }
 
 .no-outline:focus {
@@ -86,6 +91,7 @@ button.btn.btn-outline {
 .fa-temperature-high {
   color: #02d215;
 }
+
 .fa-hot-tub {
   color: #01b7e5;
 }
@@ -105,7 +111,7 @@ button.btn.btn-outline {
 #forecast {
   font-family: "Open Sans", sans-serif;
   color: #fb043e;
-  font-size: 2rem;
+  font-size: 3rem;
   position: relative;
   margin-top: 25%;
 }
@@ -159,10 +165,8 @@ button.btn.btn-outline {
   background: url("/assets/gradient.jpg");
   background-size: cover;
   background-position: center;
-  width: 110%;
   height: 50%;
   margin: -15px;
-  justify-content: center;
 }
 
 #values {
@@ -176,11 +180,11 @@ button.btn.btn-outline {
 }
 
 #beach {
-  width: 60%;
+  width: 55%;
   float: right;
-  padding-bottom: 10%;
-  padding-top: 10%;
-  padding-right: 15%;
+  padding-bottom: 5%;
+  padding-top: 7%;
+  padding-right: 10%;
 }
 
 #ocean-2 {
